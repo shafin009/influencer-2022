@@ -1,0 +1,231 @@
+/*---------------------- nav-bar-header-------------------------- */
+h4{
+    font-family: 'Luxurious Roman', cursive;
+    margin-bottom: 6px;
+    font-size:large ;
+}
+/*------------------------*Menu bar*--------------------------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: #aaaaaa04;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    list-style: none;
+    margin: 13px;
+    padding-top: 10px;
+}
+.search{
+    margin: 9px;
+    padding-top: 17px;
+    padding-right: 15px;
+    cursor: pointer;
+    
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 18px 15px;
+}
+/*-------------*adventure & influencer tag*------------------- */
+.adventure{
+     display: flex;
+     justify-content: space-between;
+}
+.influencer{
+    padding-top: 12px;
+}
+.influencer h1{
+    font-size: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0;
+}
+.influencer p{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0;
+}
+.camera{
+    height: 414px;
+    width: 440px;
+    padding-left:10px;
+    background-image: url(Circle\ design.svg);
+    background-size: 430px 404px;
+    background-repeat: no-repeat;
+}
+/*-----------------------preebook-button---------------------- */
+.preebook{
+    text-decoration: none;
+    background-color:#E02C6D;
+    color: white;
+    border-radius: 17px;
+    padding: 14px;
+    font-weight: 900;
+    font-size: 20px;
+}
+/* -------------horizontal bar,logos & popular tag----------------- */
+hr{
+    border: #aaaaaa28 solid 1px;
+    width: 90%;  
+}
+.logos{
+    display: flex;
+    justify-content: space-between;    
+}
+#popular{
+    text-align: center;
+    padding-top: 15px;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+}
+/*--------------------product, container tag------------------- */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 1550px;
+    width: 900px; 
+    padding-left: 60px;
+}
+.product img{
+    height: 200px;
+    border-radius: 10px;
+    padding-top: 5px;
+}
+.product{
+    height: 470px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding-left: 15px;
+    margin-right: 40px;
+    border-radius: 15px;
+    padding-right: 20px; 
+    overflow: hidden; 
+}
+.fa-star{
+    color:#FB8200;
+}
+.product p{
+    font-weight: 700;
+    font-size: large;
+}
+.money{
+    font-weight: 1000;
+    font-size:25px;
+}
+/*-----------------------buy now button------------------- */
+.button{
+    background-color:blue;
+    color: white;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 8px 0 rgba(0, 0, 255, 0.514);
+    position: relative;
+    top: 0;
+}
+.button:active{
+    top: 5px;
+    box-shadow: 0 3px 0 rgba(0, 0, 255, 0.514);
+}
+/*---------------------picture-hover------------------------------ */
+.picture:hover{
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 5s ease-in-out; 
+}
+/*--------------------portfolio web-part----------------- */
+#middle img{
+    width: 350px;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 70px;
+}
+#middle{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.write{
+    padding-top: 60px;
+    padding-left: 25px;
+}
+/*-------------------------footer-part---------------------*/
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 1px;
+    margin-top: 40px;
+}
+.social{
+    padding: 0 15px 10px 15px;
+    cursor: pointer;
+}      
+@media (max-width:768px) {
+    
+    .container{
+        grid-template-columns:repeat(2, 1fr);
+        height: fit-content;
+    }
+    .social{
+        padding: 0;
+        margin-top: 6px;
+    }
+    .picture{
+        max-width: fit-content;
+    }
+    .write{
+    padding-top: 0%;
+    padding-left: 0;
+    }
+    #middle{
+    padding-top: 0%;
+    }
+    footer{
+    padding:0;
+    height: fit-content;
+    }
+}
+@media (max-width:576px) {
+    .container {
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .picture {
+        max-width: fit-content;
+    }
+
+    .social {
+        padding: 0;
+        margin-top: 6px;
+    }
+
+    .write {
+        padding-top: 0%;
+        padding-left: 0;
+    }
+
+    #middle {
+        padding-top: 0%;
+    }
+
+    footer {
+        padding: 0;
+        height: fit-content;
+    }
+}
